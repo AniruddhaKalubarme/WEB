@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docum"ent</title>
+    <style>
+        #font{
+            font-size: 2cm;
+            color: red;
+            /* Single shadow */
+            text-shadow:8px 8px 5px orange ;
+
+            /* Double shadow */
+            text-shadow:-8px 8px 5px orange , 10px 10px 5px green;
+        }
+
+        #box{
+            font-size: 2cm;
+            width: 20cm;
+            Height: 15cm;
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 3cm;
+
+            /* font-size: xx-large; */
+            color: red;
+            /* Single shadow */
+            box-shadow: 20px -40px 15px orange;
+
+            /* Double shadow */
+            box-shadow: 20px -40px 15px orange, -20px 40px 15px yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="font"> This is the paragraph.</p>
+    <p id="box"> <u>This is BOX.</u> </p>
+</body>
+</html>

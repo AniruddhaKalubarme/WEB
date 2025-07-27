@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Univarsal selector */
+        *{
+            color: saddlebrown;
+        }
+
+        /* tag selector */
+        /* Overrides: Universal selector, tag selector */
+        p{
+            color: orange;
+        }
+
+        /* class selector */
+        /* Overrides: Universal selector, tag selector */
+        .ak{
+            color: aqua;
+        }
+        
+        /* ID selector */
+        /* Overrides: Universal selector, tag selector, class selector */
+        #para
+        {
+            color: yellow;
+        }
+
+        /* !important - can be used in any selector */
+        /* Overrides: Everything */
+        .ak{
+            color: orange !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline style attribute 
+    Overrides: Universal selector, tag selector, class selector , id selector -->
+    <p class="ak" id="para" style="color: darkblue;"> This is the paragraph</p>
+</body>
+</html>

@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+#wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#navLogo
+{
+    position: relative;
+    width: 60px;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logoContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.navText
+{
+    margin-left: -1rem;
+    font-size: 28px;
+    /* font-weight: bold; */
+}
+
+.navItems
+{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4rem;
+    /* font-family: ; */
+}
+
+.navItems div
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navItems div a
+{
+    color: black;
+}
+
+a{
+    /* remove Underline */
+    text-decoration: none;
+}
+
+.navItems div:hover
+{
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.Hero
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+
+#UserImage
+{
+    height: 345px;
+}
+
+.fadedText
+{
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231,231,231);
+
+    bottom: -16%;
+    font-weight: bold;
+    /* transition: all 3s; */
+}
+
+.Hero_Left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero_Right
+{
+    position: relative;
+    /* padding-right: 1rem; */
+}
+
+.HeroHead
+{
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+
+.role
+{
+    color: #4e45d5;
+    font-weight: 800;
+}
+
+.HeroSubHead
+{
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.HeroDesc
+{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+
+.btn
+{
+    background-color: red;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: large;
+    box-shadow: 5px 5px 7px 0px #00003f;
+    position: relative;
+    top: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn::before
+{
+    content: "";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* transform: scaleX(0); */
+    width: 0px;
+    transform-origin: left;
+    z-index: -1;
+}
+
+.btn:hover::before
+{
+    /* transform: scaleX(1); */
+    width: 100%;
+    transition: 2s;
+}
+
+.HeroSection
+{
+    position: relative;
+
+}
+
+.abs_img
+{
+    position: absolute;
+}
+
+#UserImage
+{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+
+@keyframes scaleImage {
+    0%
+    {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+    50%
+    {
+        filter: grayscale(1);
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%
+    {
+        filter: grayscale(0);
+        transform: scale(1);
+        
+    }
+}
+
+.dots
+{
+    z-index: 1;
+    bottom: -1rem;
+    right: 0;
+    animation: DotsAnim 5s linear 0s infinite;
+}
+
+@keyframes DotsAnim{
+    0% 
+    {
+        transform: translateY(0px);
+    }
+    50% 
+    {
+        transform: translateY(-15px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+    
+}
+
+.cube
+{
+    z-index: 1;
+    right: 4rem;
+    animation: CubeAnim 5s linear 0s infinite;
+    
+}
+
+@keyframes CubeAnim{
+    0% 
+    {
+        transform: translateY(0px) rotateY(0deg);
+    }
+    50% 
+    {
+        transform: translateY(-15px) rotateY(90deg);
+    }
+    100%
+    {
+        transform: translateY(0px) rotateY(0deg);
+    }
+    
+}
+
+.circle
+{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left : 0;
+    animation: CircleAnim 2.5s linear 0s infinite;
+}
+
+@keyframes CircleAnim{
+    50% 
+    {
+        bottom: 2%;
+    }   
+}
+
+#zigzags
+{
+    position: absolute;
+    z-index: 1;
+    left : -1rem;
+    top: -1rem;
+    animation: zigAnim 1ms linear 0s infinite;
+}
+
+@keyframes zigAnim{
+    0% 
+    {
+        transform:rotateZ(0deg);
+    }
+    50% 
+    {
+        transform: rotateZ(180deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+.Cards
+{
+    background-color:lightgray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.Heading
+{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: red;
+    font-weight: 900;
+    margin: 1rem;
+}
+
+.card1
+{
+    position: relative;
+    box-shadow: 10px 10px 30px black;
+}
+
+#bg1
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* opacity: 0.5; */
+}
+
+.card1_fg
+{
+    width: 100%;
+    top: 22%;
+    left: 10%;
+    gap: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    transform: scale(0.7);
+    transition: transform 0.4s linear; /* Smooth transition */
+}
+
+.fg
+{
+    display: flex;
+    gap: 2px;
+}
+
+/* Move content diagonally up-left on hover of .bg (car image) */
+.card1:hover .card1_fg {
+    transform: scale(0.9)
+}
+
+.fg img
+{
+    width: 25px;
+}
+.bottom_logo img
+{
+    width: 50px;
+}
+
+#card1_btn
+{
+    padding: 1%;
+    width: fit-content;
+}
+
+.layer
+{
+    position: absolute;
+    top:0;
+    height: 100%;
+    background-color: #343d68;
+    width: 100%;
+    opacity: 0.4;
+    transform: scaleX(0);                /* Use scaleX for horizontal expansion */
+    transform-origin: left;              /* Start scaling from the left edge */
+    transition: transform 0.4s linear;
+}
+
+.layer2
+{
+    position: absolute;
+    top:0;
+    height: 100%;
+    background-color: rgba(30, 30 , 30, 0.6);
+    width: 100%;
+}
+
+.card1_content
+{
+    color: white;
+}
+
+.card1_Head
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card1:hover .layer {
+    transform: scaleX(1);                /* Expand fully to the right */
+}
+
+.bottom_Headings h1
+{
+    color: #e74c3c; /* similar red color */
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 2rem;  
+    margin-bottom: 1rem;  
+}
+
+.large
+{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.bottom_logo
+{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.blob
+{
+    position: relative;
+    padding-top: 15rem;
+    padding-left: 20rem;
+    animation: movement 3s linear 0s infinite;
+}
+
+@keyframes movement {
+    0%
+    {
+        padding-left: 20rem;
+    }
+    50%
+    {
+        padding-left: 25rem;
+    }
+}
+
+.bottom_fg
+{
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom
+{
+    height: 32rem;
+    overflow-y: hidden;
+}
+
+.contact
+{
+    background-color: lightgray;
+    padding: 2%;
+}
+
+.contact .contact_head h1
+{
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.contact .contact_head p
+{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box input, #msg
+{
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    border-color: gray;
+    box-shadow: 3px 3px 20px gray;
+
+    
+    /* Add these for text positioning */
+    padding-left: 1rem;
+    padding-top: 0%;
+    font-size: 1.2rem;
+}
+
+#msg
+{
+    height: 10rem;
+}
+
+#contact_btn
+{
+    padding-left: 4%;
+    width: 12rem;
+    margin-left:40%;
+    margin-bottom: 2%;
+}
+
+#contact_btn:hover
+{
+    animation: transform 0.5s linear 0s 1 forwards;
+}
+
+@keyframes transform {
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(0.9);
+
+    }
+}
+
+.footer
+{
+    position: relative;
+    padding: 2%;
+    background-color: #343d68;
+    height: 8rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.footer_container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_text
+{
+    position: absolute;
+    color: lightgray;
+    font-size: 3rem;
+    opacity: 0.6;
+    bottom: -7%;
+    padding-left: 35%;
+    
+}
+
+.links a, i
+{
+    color: white;
+}
+
+.links
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.icons
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.icons i
+{
+    transform: scale(2);
+}

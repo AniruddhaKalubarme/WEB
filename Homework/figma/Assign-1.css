@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height: 100vh;
+    margin: 40px;
+    position: relative;
+}
+
+.Header
+{
+    position: relative;
+    width: 100%;
+    height: 82px;
+}
+
+#logo
+{
+    height: 82px;
+    width: 98px;
+}
+
+.HeadContent
+{
+    width: 1%;
+    position: absolute;
+    display: flex;
+    top:30%;
+    left:35%;
+    gap: 40px;
+}
+
+.HeadContent :hover
+{
+    color:blue;
+    text-decoration: underline;
+}
+
+#sp
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 64, 240);
+    width: 165px;
+    height: 54px;
+    top:10%;
+    left: 85%;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#sp:hover
+{
+    background-color: rgb(82, 238, 82);
+}
+.body
+{
+    position: relative;
+    top: 50px;
+}
+.body-1
+{
+    position: relative;
+    display: flex;
+    top: 10%;
+    gap: 9%;
+}
+
+.head
+{
+    text-decoration: underline;
+    text-decoration-color: gray;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px;
+}
+
+#Babbar-1
+{
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border: 5px solid gray;
+    border-radius: 20px;
+}
+
+p
+{
+    /* position: relative; */
+    text-align: justify;
+    font-family: Raleway;
+    color: grey;
+}
+
+.body-2
+{
+    height: fit-content;
+    position: relative;
+    display: flex;
+    top: 30px;
+    gap: 10%;
+}
+
+#Babbar-2
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border: 5px solid gray;
+    border-radius: 20px;
+}
+
+.box2
+{
+    position: relative;
+    top: 50px;
+    margin-right: 50px;
+}
+
+.footer
+{
+    position: relative;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ftr
+{
+    color: blueviolet;
+}

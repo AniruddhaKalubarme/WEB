@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    /* background-color: white; */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px; 
+}
+
+.container
+{
+    /* position: relative; */
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    /* z-index: -1; */
+    /* flex-direction: column; */
+}
+
+.background
+{
+    transform: translateZ(-40px) scale(5);
+    /* opacity: 0.8; */
+}
+
+.foreground
+{
+    transform: translateZ(-20px) scale(3);
+    
+}
+
+.background, .foreground
+{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    /* z-index not needed if we are using translateZ */
+    /* z-index: -1; */
+    object-fit: cover;
+}
+
+h1
+{
+    transform: translateZ(-5px) scale(6);
+    /* top: -120cm; */
+     margin-top: -11cm;
+    /* font-size: 1000%; */
+}

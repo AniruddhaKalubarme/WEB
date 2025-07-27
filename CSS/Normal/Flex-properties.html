@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        div
+        {
+            display: flex;
+            border: 2px solid red;
+            background-color: black;
+            height: 25cm;
+        }
+
+        #A
+        {
+            /* order  deafault 0 */ 
+            order: 1;
+            
+            flex-shrink: 4;
+        }
+        #B
+        {
+            /* order  deafault 0 */
+            order: 2;
+
+            /* flex-grow */
+            /* flex-grow: 1; */
+
+            align-self: center;
+        }
+
+        #C
+        {
+            /* width: 4cm; */
+            /* grows box as per content */
+            flex-basis: 8cm;
+
+            align-self:flex-end;
+        }
+
+        #D
+        {
+            flex: 1 1 0;
+
+            align-self: baseline;
+        }
+
+        .box{
+            background-color: aqua;
+            width: 4cm;
+            height: 3cm;
+
+            /* flex-grow */
+            /* flex-grow: 1; */
+        }
+        
+    </style>
+
+    <body>
+        <div>
+            <div class="box" id="A"> <h1> 1 </h1> </div>
+            <div class="box" id="B"> <h2> 2 </h2> </div>
+            <div class="box" id="C"> <h3>  Incidunt,  </h3> </div>
+            <div class="box" id="D"> <h1> 4 </h1> </div>
+        </div>
+    </body>
+</html>

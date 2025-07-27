@@ -1,0 +1,35 @@
+.container
+{
+    background-color: black;
+    border: 2px solid black;
+    width: 502px;
+    display: grid;
+    grid-template-rows: 70px 400px 30px;
+    grid-template-columns: 100px 400px;
+    grid-gap: 2px;
+
+    grid-template-areas: 
+    "hd hd"
+    "content content"
+    "footer footer";
+}
+
+.box
+{
+    background-color: aqua;
+}
+
+#Header
+{
+    grid-area: hd;
+}
+
+#Content
+{
+    grid-area: content;
+}
+
+#Footer
+{
+    grid-area: footer;
+}

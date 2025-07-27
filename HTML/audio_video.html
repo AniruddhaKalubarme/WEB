@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <!-- controlled without loop-->
+           <audio controls>
+               <source src="success.mp3">
+           </audio>
+           <br>
+   
+            <!-- controlled with loop-->
+           <audio controls loop>
+               <source src="success.mp3">
+           </audio>
+           <br>
+   
+           <!-- controlled wiht muted initially-->
+           <audio controls muted>
+               <source src="success.mp3">
+           </audio>
+           <br>
+   
+           <!-- autoplay and loop in muted always hidden-->
+           <audio autoplay loop muted>
+               <source src="success.mp3">
+           </audio>
+        </div>
+
+        <div>
+            <video autoplay width="1000cm">
+            <source src="harry.mp4">
+            </video>
+
+            <br>
+            <br>
+            
+            <video src="harry.mp4" controls autoplay muted height="500m" width="500m">
+                <source >
+            </video>
+
+            <!-- same atributes as in audio-->            
+        </div>
+    </body>
+</html>

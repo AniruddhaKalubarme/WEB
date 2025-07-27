@@ -1,0 +1,38 @@
+/* chack the changes using inspect element */
+
+.container
+{
+    display: grid;
+    border: 2px solid black;
+    height: 15cm;
+    background-color: brown;
+    grid-template-columns: 100px 150px 100px;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: 100px repeat(2, 1fr) 100px;
+
+    gap: 15px;
+
+}
+
+#box2
+{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#box1
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.box
+{
+    border: 2px solid black;
+    background-color: aqua;
+    /* height: 2cm; */
+    /* width: 2cm; */
+}
+

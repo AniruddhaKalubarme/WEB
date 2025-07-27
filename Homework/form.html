@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            #sub{
+                background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;
+                margin-left: 1.5cm;
+            }
+            #res{
+                background-color: red; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;
+                /* margin-left:  */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to CodeHelp!</h1>
+        <h2>Contact Us Form</h2>
+
+        <form action="https://codechef.com">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="Contact">Contact</label>
+            <input type="number" id="Contact" placeholder="Enter the contact No.">
+            <br>
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob">
+            <br>
+
+            <span>Rating</span>
+            <label for="Rating1">1</label>
+            <input type="radio" name="Rating" id="Rating1">
+            <label for="Rating2">2</label>
+            <input type="radio" name="Rating" id="Rating2">
+            <label for="Rating3">3</label>
+            <input type="radio" name="Rating" id="Rating3">
+            <label for="Rating4">4</label>
+            <input type="radio" name="Rating" id="Rating4">
+            <label for="Rating5">5</label>
+            <input type="radio" name="Rating" id="Rating5">
+
+            <!-- if we change the name of each tag then it will treat as different
+             currently we can choose only one option from 5 rating
+             but from below code we can select multiple select option at a time
+            
+            <span>Rating</span>
+            <label for="Rating1">1</label>
+            <input type="radio" name="Rating1" id="Rating1">
+            <label for="Rating2">2</label>
+            <input type="radio" name="Rating2" id="Rating2">
+            <label for="Rating3">3</label>
+            <input type="radio" name="Rating3" id="Rating3">
+            <label for="Rating4">4</label>
+            <input type="radio" name="Rating4" id="Rating4">
+            <label for="Rating5">5</label>
+            <input type="radio" name="Rating5" id="Rating5">
+            -->
+
+            <br>
+            <label for="msg">Enter Your Message:</label>
+            <br>
+            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter the text"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" id="sub" value="Submit" >
+            <input type="reset" id="res" value="Reset" >
+
+            <br>
+            <footer style="padding: 0.5cm;">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="https://www.liblogo.com/img-logo/yo482y5ff-youtube-icon-logo-youtube-logo-free-icon-of-vector-logo.png" alt="Youtube" style="width: 1cm;">
+                </a>
+
+                <a href="https://www.google.com" target="_blank"> 
+                    <img src="https://th.bing.com/th/id/OIP.EhTMbGiYfYzQnWLgjZaoJAHaHa?rs=1&pid=ImgDetMain" alt="Youtube" style="width: 1cm; margin-left: 0.4cm;">
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank">    
+                    <img src="https://i.pinimg.com/736x/a3/df/0c/a3df0c2d2059ed44ad01d315f304db35.jpg" alt="Youtube" style="width: 1cm; margin-left: 0.4cm;">
+                </a>
+                
+            </footer>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.container
+{
+    height: 500px;
+    border: 2px solid black;
+    background-color: yellow;
+}
+
+.box
+{
+    border: 2px dotted orange;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: blue;
+    
+    /* transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 3s; */
+    
+    transition: transform 2s linear  1s;
+}
+
+.box:hover
+{
+    background-color: rgb(255, 0, 0);
+    transform: rotate(360deg) translateX(400px);
+}

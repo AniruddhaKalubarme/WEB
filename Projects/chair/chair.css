@@ -1,0 +1,199 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.wrapper
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+}
+
+.chair
+{
+    position: absolute;
+    top: 5%;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.left img
+{
+    width: 35%;
+}
+
+.right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    position: relative;
+    left: 50%;
+}
+
+.accor-1 p
+{
+
+    text-align: justify;
+    width: 50%;
+}
+
+#new_price
+{
+    font-size: 2rem;
+}
+
+#old_price
+{
+    font-size: 1rem;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked)
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.desc
+{
+    cursor: pointer;
+}
+
+.color-1 {
+    background-image: url("../Modern_chair/images/color1.jpg");
+}
+
+.color-2 {
+    background-image: url("../Modern_chair/images/color2.jpg");
+}
+
+.color-3 {
+    background-image: url("../Modern_chair/images/color3.jpg");
+}
+
+.color-4 {
+    background-image: url("../Modern_chair/images/color4.jpg");
+}
+
+.color-5 {
+    background-image: url("../Modern_chair/images/color5.jpg");
+}
+
+.color-6 {
+    background-image: url("../Modern_chair/images/color6.jpg");
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.color-6 {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 20%;
+    margin: 0 8px 0 0;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.color-btn {
+    display: none;
+}
+
+.bg
+{
+    position: absolute;
+    top: 0;
+    left: -70%;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+.for-color-1:checked ~ .container
+{
+    background-color: pink;
+}
+.for-color-1:checked ~ #chair1
+{
+    opacity: 1;
+}
+
+.for-color-2:checked ~ .container
+{
+    background-color: red;
+}
+.for-color-2:checked ~ #chair2
+{
+    opacity: 1;
+}
+
+.for-color-3:checked ~ .container
+{
+    background-color: yellow;
+}
+.for-color-3:checked ~ #chair3
+{
+    opacity: 1;
+}
+
+.for-color-4:checked ~ .container
+{
+    background-color: orange;
+}
+.for-color-4:checked ~ #chair4
+{
+    opacity: 4;
+}
+
+.for-color-5:checked ~ .container
+{
+    background-color: green;
+}
+.for-color-5:checked ~ #chair5
+{
+    opacity: 1;
+}
+
+.for-color-6:checked ~ .container
+{
+    background-color: violet;
+}
+.for-color-6:checked ~ #chair6
+{
+    opacity: 1;
+}
+
+.desc-sec {
+    display: none;
+}
+
+#desc-1:checked ~ .desc-sec.accor-1 {
+    display: block;
+}
+
+
+#desc-2:checked ~ .desc-sec.accor-2 {
+    display: flex;
+    border: solid black;
+    gap: 2rem;
+}
+

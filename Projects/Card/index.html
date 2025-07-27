@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .circle_1 {
+            box-shadow: 0 0 18px 7px lightcoral;
+        }
+        .circle_2 {
+            box-shadow: 0 0 18px 7px orange;
+        }
+
+        .share, .follow {
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+
+        .share:hover, .follow:hover{
+            background-color: whitesmoke;
+            color:black;
+        }
+
+        .circle_1
+        {
+            animation: moving_circle_1 3s linear infinite;
+        } 
+
+        .circle_2
+        {
+            animation: moving_circle_2 3s linear infinite;
+        } 
+
+        .links
+        {
+            scale: 0;
+            transition: all 0.3s linear;
+        }
+
+        .overlay
+        {
+            transform: scaleX(0);
+            transition: all 0.3s linear;
+        }
+
+        /* Base style for all icons */
+        #fb, #insta, #twit, #link, #git {
+            border-radius: 100%;            /* makes round highlight */
+            padding: 4px;
+            transition: all 0.3s ease; 
+        }
+
+        /* Facebook */
+        #fb:hover {
+            color: #1877F2;                 /* Facebook brand blue */
+            border-color: #1877F2;
+            transform: scale(1.1);
+        }
+
+        /* Instagram gradient text */
+        #insta:hover {
+            background: linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-color: #DD2A7B;          /* subtle pink border */
+            transform: scale(1.1);
+        }
+
+        /* Twitter */
+        #twit:hover {
+            color: #1DA1F2;                 /* Twitter blue */
+            border-color: #1DA1F2;
+            transform: scale(1.1);
+        }
+
+        /* LinkedIn */
+        #link:hover {
+            color: #0A66C2;                 /* LinkedIn blue */
+            border-color: #0A66C2;
+            transform: scale(1.1);
+        }
+
+        /* GitHub */
+        #git:hover {
+            color: #333;                    /* GitHub dark gray */
+            border-color: #333;
+            transform: scale(1.1);
+        }
+
+        @keyframes moving_circle_1 {
+            50%
+            {
+                left: -15%;
+            }
+        }
+
+        @keyframes moving_circle_2 {
+            50%
+            {
+                right: -25%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="relative wrapper w-screen h-screen bg-black">
+        <div class="relative container h-screen w-screen mx-auto flex justify-center items-center">
+            <div class="relative Outer_Content h-[400px] w-[350px] rounded-lg p-10 text-white flex flex-col gap-4 justify-center items-center z-[10]">
+                <div class="circle_1 absolute top-[-20%] left-[-25%] bg-red-400 h-32 w-32 rounded-full z-[-1]"> </div>
+                <div class="circle_2 absolute bg-orange-400 bottom-[-20%] right-[-30%] h-48 w-32 rounded-full z-[-1]">  </div>
+                <div class="relative Inner_Content h-[400px] w-[350px] bg-white/30 rounded-lg p-10 text-white flex flex-col gap-4 justify-center items-center z-[10] border-2 border-white/40">
+                    <div><img src="./images/profile-image.webp" alt="profile" width="150" height="150"></div>
+                    <h1 class="text-2xl font-bold">LOVE BABBAR</h1>
+                    <div class="text-white/70 font-semibold">Founder, Code Help</div>
+                    <div class="flex justify-between text-white/70 gap-4">
+                        <button onclick="ShowData()" class="share flex gap-2 rounded-md items-center border-2 px-2 py-1">
+                            <i class="fa-regular fa-share-from-square"></i>
+                            Share Me
+                        </button>
+                        <button class="follow border-2 rounded-md px-4 py-1"> Follow Me</button>
+                    </div>
+                </div>
+
+                <!-- This is the pop up section -->
+                 <div class="links absolute h-screen w-screen z-[20]">
+                    <div class="cont relative  bg-gray-500 h-[200px] w-[400px] p-4 border-2 rounded-lg place-self-center top-[50%]">
+                        <p class="text-4xl font-bold">Share my profile</p>
+                        <div class="hr h-[2px] bg-gray-400 mt-4"></div>
+                        <div class="logos mt-5 flex justify-between">
+                            <a id="fb" href="https://www.facebook.com/"><i class="fa-brands fa-facebook text-5xl"></i></a>
+                            <a id="insta" href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-5xl"></i></a>
+                            <a id="twit" href="https://www.x.com/"><i class="fa-brands fa-twitter text-5xl"></i></a>
+                            <a id="link" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin text-5xl"></i></a>
+                            <a id="git" href="https://www.github.com/"><i class="fa-brands fa-github text-5xl"></i></a>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="absolute overlay w-screen h-screen bg-white/50 z-[10]"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

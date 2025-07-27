@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position</title>
+        <style>
+            /* .div1
+            {
+                border: 2px dotted black;
+                height: 5cm;
+                width: 5cm;
+                padding: 0.5cm;
+                box-sizing: border-box;
+                background-color: aqua;
+                position:static;
+            } */
+
+            .wrapper
+            {
+                height: 50cm;
+                background-color: yellow;
+            }
+
+            .box
+            {
+                display: inline-block;
+                border: 2px dotted black;
+                height: 5cm;
+                width: 5cm;
+                padding: 0.5cm;
+                box-sizing: border-box;
+                background-color: aqua;
+            }
+
+            /* Position is fixed */
+            /* #a
+            {
+                position: fixed;
+            } */
+
+            /* Position is relative */
+            /* #b
+            {
+                position: relative;
+                top: 1cm;
+                left: 2cm;
+                opacitY:0.5
+            } */
+
+            /* Position is absolute */
+            /* #b
+            {
+                position: absolute;
+                top: 1cm;
+                left: 2cm;
+                opacitY:0.5
+            } */
+
+            /* Position is absolute */
+            /* Initialy work like relative and  then work as fixed */
+            #c
+            {
+                position: sticky;
+                top: 2cm;
+                opacitY:0.5
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- static position -->
+         <!-- <div class="div1">
+             <p> This is para</p>
+             <div> This is div</div>
+             <h1> Heading</h1>     
+        </div> -->
+
+        <br>
+        <!-- position -->
+         <div class="wrapper">
+             <div class="box" id="a"> 1 </div>
+             <div class="box" id="b"> 2 </div>
+             <div class="box" id="c"> 3 </div>     
+        </div>
+
+    </body>
+</html>
