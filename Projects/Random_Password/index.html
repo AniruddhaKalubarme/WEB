@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Password_Generator</title>
+    <style>
+        #indication
+        {
+            background-color: white;
+            box-shadow:0 0 10px white;
+        }
+
+        .checkboxes
+        {
+            display: flex;
+            gap:15px;
+        }
+
+        .checkboxes input
+        {
+            scale:140%;
+        }
+
+        .message
+        {
+            opacity: 0;
+            scale: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .active
+        {
+            opacity: 1;
+            scale: 1;            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-gradient-to-r from-[#57087B] to-[#1A092D] text-white mx-auto p-10 flex flex-col items-center gap-6 h-screen ">
+        <h1 class="text-4xl text-white/70 text-bold">Password Generator</h1>
+        <div class="relative bg-[#160628] border-[2px] border-green-400 flex items-center p-4 px-6 rounded-[10px] min-w-[350px] justify-between">
+            <input class="border-none outline-none bg-transparent text-white text-lg w-[250px]" readonly type="text" placeholder="Password" id="password">
+            <button id="cpy_btn" class="w-fit">
+                <span class="message absolute z-10 text-white bg-[#160628] top-[-40%] right-[2%] border-[1px] px-2 py-1 rounded-[2px]" id="msg"></span>
+                <img src="https://codehelp-password-generator.netlify.app/assets/copy.svg" alt="copy" width="30px">
+            </button>
+        </div>
+
+        <div class="flex flex-col bg-[#160628] items-center border-[3px] p-5 px-12 text-lg gap-2 rounded-[10px]">
+            <div class="text-xl flex justify-between max-w-[400px] w-full box-border">
+                <p>Password Length</p>
+                <p id="length">10</p>
+            </div>
+            <input class="w-[60%] scale-[130%]" id="slider" type="range" min="0" max="20" step="1" class="slider">
+            <div class="flex flex-col gap-2 mt-2">
+                <div class="checkboxes">
+                    <input type="checkbox" checked id="Upper">
+                    <label for="Upper">Include Uppercase Letters</label>
+                </div>
+
+                <div class="checkboxes">
+                    <input type="checkbox" id="Lower">
+                    <label for="Lower">Include Lowecase Letters</label>
+                </div>
+
+                <div class="checkboxes">
+                    <input type="checkbox" id="Numbers">
+                    <label for="Numbers">Include Numbers</label>
+                </div>
+
+                <div class="checkboxes">
+                    <input type="checkbox" id="Symbols">
+                    <label for="Symbols">Include Symbols</label>
+                </div>
+            </div>
+
+            <div class="flex justify-between w-[250px] mt-3">
+                <p>Strength</p>
+                <div id="indication" class="w-[20px] h-[20px] rounded-full"></div>
+            </div>
+
+            <div>
+                <button id="pass_btn" class="bg-[#FFA538] px-8 py-2 font-bold rounded-[5px] mt-4">
+                    GENERATE PASSWORD
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
