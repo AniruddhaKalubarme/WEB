@@ -1,0 +1,206 @@
+*
+{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.wrapper
+{
+    background: linear-gradient(to bottom right, #122F50, #3F71AE);
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color: white;
+    padding: 2%;
+}
+
+h1
+{ 
+    font-size : 3rem;
+}
+
+button:hover
+{
+    cursor:pointer;
+
+}
+
+.btns
+{
+    margin-top: 2%;
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.weather_btn, .Main_search_btn
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+
+    font-size:large;
+    color:white;
+    margin-bottom: 20px;
+    border:none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.access
+{
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    display: none;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+.access p
+{
+    font-size: 1rem;
+}
+
+.access button
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+
+    color:white;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    border:none;
+    border-radius: 5px;
+}
+
+.Search_Bar
+{
+    display: flex;
+    gap:10px;
+
+    display: none;
+}
+
+.Search_Bar input
+{
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+
+    border-radius: 5px;
+    border: none;
+
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    font-size: 20px;
+}
+
+#search_btn
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 100%;
+}
+
+.loading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    display: none;
+}
+
+.loading p
+{
+    font-size: 1.5rem;
+}
+
+.Not_Found
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.Not_Found p
+{
+    font-size: 1.5rem;    
+}
+
+.Weather_Info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top:20px;
+    display: none;
+}
+
+#city
+{
+    font-size: 2rem;
+}
+
+#condition
+{
+    font-size: 1.5rem;
+}
+
+.cards
+{
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1, .card2, .card3
+{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.active_btn
+{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.active
+{
+    display:flex;
+}
+

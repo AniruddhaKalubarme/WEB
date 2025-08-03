@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather</title>
+</head> 
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="heading">
+                <h1>Weather App</h1>
+            </div>
+
+            <div class="btns">
+                <button class="weather_btn active_btn">Your Weather</butto>
+                <button class="Main_search_btn">Search Weather</button>
+            </div>
+
+            <div class="information">
+                <!-- your weather permission -->
+                <div class="access active">
+                    <img src="./location.png" alt="location" width="80" height="80">
+                    <h2>Grant Location Access</h2>
+                    <p>Allow Access To Get Weather Information</p>
+                    <button id="Grant_Access">Grant Access</button>
+                </div>
+
+                <!-- Search bar -->
+                <form class="Search_Bar">
+                    <input type="text" id="search" placeholder="Search for city...">
+                    <button id="search_btn"><img src="search.png" alt="search" width="20"></button>
+                </form>
+
+                <!-- Loading screen -->
+                <div class="loading">
+                    <img src="loading.gif" alt="loading" width="120" height="120">
+                    <p>loading</p>
+                </div>
+
+                <!-- city not found -->
+                <div class="Not_Found">
+                    <img src="not-found.png" alt="not-found" width="300">
+                    <p>city not found</p>
+                </div>
+
+                <!-- Weather information -->
+                <div class="Weather_Info">
+                    <p id="city">Mangalvedha</p>
+                    <p id="condition">Clouds</p>
+                    <img id="cond_img" src="https://openweathermap.org/img/w/04n.png" alt="image" width="80">
+                    <p id="temprature"></p>
+                    <div class="cards">
+                        <div class="card1">
+                            <img src="wind.png" alt="wind" width="40">
+                            <h3>WINDSPEED</h3>
+                            <h4 id="speed">3.20m/s</h4>
+                        </div>
+
+                        <div class="card2">
+                            <img src="humidity.png" alt="humidity" width="40">
+                            <h3>HUMIDITY</h3>
+                            <h4 id="humidity">92%</h4>
+                        </div>
+
+                        <div class="card3">
+                            <img src="cloud.png" alt="cloud" width="40">
+                            <h3>CLOUDS</h3>
+                            <h4 id="clouds">100%</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
