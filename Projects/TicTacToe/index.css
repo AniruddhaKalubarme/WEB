@@ -1,0 +1,91 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    height: 100vh;
+    /* background-image: url("image.png") */
+    background: linear-gradient(45deg, #45e3ff, #b338d5);
+    /* background: linear-gradient(45deg, #ffe3b3, #dd4470); */
+    background-repeat: no-repeat;
+    place-items: center;
+    padding: 5%;
+    overflow: hidden;
+}
+
+.player, .New_Game
+{
+    font-size: x-large;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.New_Game
+{
+    cursor: pointer;
+    display: none;
+}
+
+.boxes
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    aspect-ratio: 1;
+    width: 15rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color:white;
+}
+
+.boxes div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box1, .box2, .box4, .box5
+{
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    
+}
+
+.box7, .box8
+{
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.box3, .box6
+{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+
+.active
+{
+    display: block;
+}
+
+.win
+{
+    background-color: rgba(0, 255, 0, 0.4);
+}
