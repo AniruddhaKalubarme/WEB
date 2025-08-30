@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        .wrapper
+        {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            color: #4B6A9B;
+        }
+
+        .WhiteText
+        {
+            color:white;
+        }
+     </style>
+</head>
+<body>
+    <div class="wrapper w-screen h-screen ">
+        <div class="Contain h-full w-full bg-[#F6F8FF] flex flex-col items-center gap-5">
+            <div class="Header flex text-xl justify-between w-[50%] font-bold mt-10">
+                <h1>DevDetective</h1>
+                <button class="Dark_btn flex gap-4 cursor-pointer">
+                    <span id="modeText">DARK</span>
+                    <img id="modeImg" src="moon-icon.svg" alt="moon-icon" width="20">
+                </button>
+            </div>
+
+            <div class="Search_Panel flex w-[50%] justify-between p-2 items-center rounded-full bg-white shadow-lg gap-5">
+                <div class="flex flex-3 gap-4">
+                    <div class=" ml-5 flex items-center justify-center h-8 w-8">
+                        <img src="Search.webp" alt="search"
+                            class="w-full h-full object-contain" />
+                    </div>
+                    <form class="form_btn flex-3">
+                        <input class="Search_Bar focus:outline-none w-full text-[1.1rem] text-black" type="search"  placeholder="Enter a GitHub username..." required="">
+                    </form>
+                </div>
+                <button class="Search_btn hover:bg-blue-400 py-2 px-4 mr-3 rounded-full bg-blue-500 text-white cursor-pointer">Search</button>
+            </div>
+
+            <div class="Details flex gap-10 bg-white p-8 rounded-[15px] w-[50%] justify-between">
+                <div class="left rounded-full overflow-hidden h-fit">
+                    <img class="Profile_Image" src="aniruddha.png" alt="Image" width="130px">
+                </div>
+                <div class="right leading-7 w-[70%]">
+                    <div class="flex justify-between">
+                        <h2 class="text-black font-bold text-xl" id="name">Name</h2>
+                        <p id="JoinDate">Date</p>
+                    </div>
+                    <a href="" id="user_link">UserName</a>
+                    <p id="Description" class="mb-5 mt-5">Description</p>
+
+                    <div id="card" class="flex justify-between gap-5 mb-5 bg-[#F6F8FF] p-3 rounded-[10px]">
+                        <div>
+                            <p>Repos</p>
+                            <p id="Repo_count" class="cards text-black font-bold text-xl">count</p>
+                        </div>
+                        <div>
+                            <p>Repos</p>
+                            <p id="Followers_count" class="cards text-black font-bold text-xl">count</p>
+                        </div>
+                        <div>
+                            <p>Following</p>
+                            <p id="Following_count" class="cards text-black font-bold text-xl">count</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 mt-10 gap-5">
+                        <div class="flex flex-col items-center">
+                            <img src="location-icon.svg" alt="location-icon" width="15">
+                            <p id="location">Location</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="website-icon.svg" alt="website-icon">
+                            <p id="website">website</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="twitter-icon.svg" alt="twitter-icon">
+                            <p id="twitter">twitter</p>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <img src="company-icon.svg" alt="company-icon">
+                            <p id="company">company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
