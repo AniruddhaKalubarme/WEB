@@ -1,0 +1,7 @@
+.App{
+    padding: 5px;
+    box-sizing: border-box;
+
+    background-color: yellow;
+    width: fit-content;
+}

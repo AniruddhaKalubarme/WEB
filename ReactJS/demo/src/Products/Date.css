@@ -1,0 +1,18 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.Date
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: small;
+}

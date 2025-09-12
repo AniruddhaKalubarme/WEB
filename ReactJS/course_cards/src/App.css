@@ -1,0 +1,23 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.NavBar
+{
+    background-color:#22223B;
+    color:white;
+    font:900;
+    height:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bg
+{
+    background-color:#4A4E69;
+    min-height:90.5vh;
+    padding-bottom: 20px;
+}

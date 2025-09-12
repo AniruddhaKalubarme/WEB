@@ -1,0 +1,14 @@
+.Name
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap:25px;
+    color: orange;
+    background-color: blueviolet;
+    margin: 5px;
+    border-radius: 15px;
+    width: 300px;
+    font-size: 1.2rem;
+    align-items: center;
+}

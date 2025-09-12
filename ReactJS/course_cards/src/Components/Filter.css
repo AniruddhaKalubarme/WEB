@@ -1,0 +1,35 @@
+.btn {
+  color:white;
+  background: transparent;
+  border: 2px solid transparent; /* default: no border */
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border-color: #ccc; /* light border on hover */
+}
+
+.btn.active {
+  border-color: #ff3d00;  /* highlight selected */
+  color: #ff3d00;         /* text color change */
+  font-weight: 600;
+}
+
+.btn-panel
+{
+    display:flex;
+    gap:10px;
+
+    justify-content:center;
+    padding-top:10px;
+}
+
+.btn:hover
+{
+    background-color:black;
+    cursor:pointer;
+}
