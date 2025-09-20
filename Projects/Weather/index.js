@@ -112,7 +112,7 @@ function fillWeatherDetails(data)
     city.innerText = data?.name;
     condition.innerText = data?.weather?.[0]?.description;
     cond_img.src = `https://openweathermap.org/img/w/${data?.weather?.[0]?.icon}.png`;
-    temprature.innerText = `${data?.main?.temp}°C`;
+    temprature.innerText = `${(data?.main?.temp - 273.15).toFixed(2)}°C`;
     speed.innerText = `${data?.wind?.speed}m/s`;
     humidity.innerText = `${data?.main?.humidity}%`;
     clouds.innerText = `${data?.clouds?.all}%`;
