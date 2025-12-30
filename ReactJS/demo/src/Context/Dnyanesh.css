@@ -1,0 +1,32 @@
+*
+{
+    padding:0%;
+    margin:0%;
+}
+
+.outside
+{
+    width: fit-content;
+    position: relative;
+    background-color: aqua;
+    display:flex;
+    padding:10px;
+}
+
+.inside
+{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    height:100%;
+    width: 12px;
+    background-color: red;
+}
+
+.Text
+{
+    margin-left: 12px;
+    max-width: 5cm;
+    justify-content: center;
+}
