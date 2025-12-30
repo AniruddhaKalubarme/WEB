@@ -1,5 +1,5 @@
 {
-  "homepage": "https://aniruddhakalubarme.github.io/WEB/ReactJS/Random_Gif",
+  "homepage": "https://AniruddhaKalubarme.github.io/Random_GIF",
   "name": "random-gif",
   "private": true,
   "version": "0.0.0",
@@ -9,6 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
