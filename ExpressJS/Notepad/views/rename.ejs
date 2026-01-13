@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rename File</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen bg-zinc-100 flex flex-1 items-center pl-10">
+        <form class="bg-white p-8 rounded-xl shadow-lg" action="/rename/<%= filename %>" method="post">
+            <h1 class="text-2xl font-bold mb-6 text-zinc-800">Rename Note</h1>
+            <input readonly value="<%= filename %>"
+                class="block w-full border border-zinc-300 rounded-md px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                type="text" placeholder="Title" name="filename"></input>
+
+            <input
+                class="block w-72 border border-zinc-300 rounded-md p-4 mb-4 h-40 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Write your note details here..." name="newfilename"></input>
+
+            <button
+                class="w-full bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200">Rename
+                Note </button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
