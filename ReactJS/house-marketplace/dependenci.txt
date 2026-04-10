@@ -1,0 +1,4 @@
+npm install firebase
+npm i react-router-dom
+npm install bootstrap
+npm i --save react-toastify

@@ -14,8 +14,8 @@ app.listen(PORT, ()=>{
     console.log(`The server is started at port ${PORT}`);
 })
 
-const dbCnnect = require("./config/database");
-dbCnnect();
+const dbConnect = require("./config/database");
+dbConnect();
 
 app.get("/", (req, res) => {
     res.send('<h1> This is the HOMEPAGE body</h1>')

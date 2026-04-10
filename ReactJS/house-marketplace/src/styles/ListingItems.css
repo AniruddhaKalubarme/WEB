@@ -1,0 +1,169 @@
+/* ===== LISTING ITEMS COMPONENT STYLING ===== */
+
+.categoryListing {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.categoryListing:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Category Listing Link */
+.categoryListingLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.categoryListingLink:hover {
+  text-decoration: none;
+}
+
+/* Listing Image */
+.categoryListingImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.categoryListingLink:hover .categoryListingImg {
+  transform: scale(1.05);
+}
+
+/* Listing Details Container */
+.categoryListingDetails {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Location */
+.categoryListingLocation {
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Listing Name */
+.categoryListingName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Listing Price */
+.categoryListingPrice {
+  font-size: 20px;
+  font-weight: 700;
+  color: #007bff;
+  margin: 0 0 12px 0;
+}
+
+/* Info Div */
+.categoryListingInfoDiv {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.categoryListingInfoDiv img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+/* Info Text */
+.categoryListingInfoText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  margin: 0;
+}
+
+/* Delete/Remove Icon */
+.removeIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(231, 76, 60, 0.9);
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+.removeIcon:hover {
+  background-color: rgb(231, 76, 60);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+.removeIcon:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .categoryListing {
+    border-radius: 8px;
+  }
+
+  .categoryListingImg {
+    height: 150px;
+  }
+
+  .categoryListingDetails {
+    padding: 12px;
+  }
+
+  .categoryListingName {
+    font-size: 16px;
+  }
+
+  .categoryListingPrice {
+    font-size: 18px;
+  }
+
+  .categoryListingInfoDiv {
+    gap: 8px;
+    padding-top: 8px;
+  }
+
+  .categoryListingInfoText {
+    font-size: 12px;
+  }
+
+  .removeIcon {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    right: 8px;
+    padding: 4px;
+  }
+}

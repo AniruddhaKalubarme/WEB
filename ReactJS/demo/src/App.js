@@ -1,10 +1,10 @@
 import './App.css';
-import Dnyanesh from "./Context/Dnyanash"
+import Demo from "./Practice/demo"
 
 function App() {
 
     return (
-        <Dnyanesh></Dnyanesh>
+        <Demo></Demo>
     )
 }
 

@@ -1,0 +1,13 @@
+.RatingButtons{
+    background-color: azure;
+    font-size:large
+}
+
+.RatingButtons:checked{
+    background-color: green;
+}
+
+input[type="radio"] {
+    transform: scale(1.8);   /* 1.5–2 is good range */
+    margin-right: 8px;
+}
