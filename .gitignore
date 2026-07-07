@@ -3,3 +3,5 @@ node_modules/
 
 ExpressJS
 ReactJS/Ticket_functionality
+.env
+.gitignore
